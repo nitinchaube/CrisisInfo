@@ -1,0 +1,12 @@
+!*.ipynb
+*.pkl
+models/
+v1/
+key*
+FIASS/
+*/v1/*
+.env
+key.txt
+.ipynb_checkpoints/
+chroma_db/
+event_store/

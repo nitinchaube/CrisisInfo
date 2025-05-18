@@ -1,0 +1,95 @@
+[
+  {
+    "event_type": "Conflict",
+    "location": [
+      "India",
+      "Pakistan"
+    ],
+    "people_killed": 19,
+    "people_trapped": null,
+    "infrastructure_damage": null,
+    "other_details": {
+      "potential_nuclear_conflict": true
+    },
+    "summary": "A conflict between India and Pakistan resulted in 19 fatalities. There was a positive chance of the conflict escalating to a nuclear level.",
+    "id": "765e9e7c-f590-4dd8-96e7-633a46477eca"
+  },
+  {
+    "event_type": "War",
+    "location": "India, Pakistan",
+    "summary": "Something great happened as Pakistan army head called india to stop the war and look ahead.",
+    "id": "4a13672e-7bd9-4121-a6c1-3a8c08d5552d"
+  },
+  {
+    "event_type": "Flood",
+    "location": "Mumbai",
+    "people_killed": "Unknown",
+    "people_trapped": "Commuters stranded",
+    "infrastructure_damage": "Flooding in low-lying areas",
+    "other_details": "Rescue operations are ongoing",
+    "summary": "Heavy rainfall in Mumbai has led to flooding in several low-lying areas. Commuters are stranded and rescue operations are currently ongoing.",
+    "id": "7dfdcab9-4cb2-4979-a254-f867f53e888b"
+  },
+  {
+    "event_type": "Flood",
+    "location": "Northern Bihar",
+    "people_displaced": 10000,
+    "relief_camps_location": "Schools",
+    "summary": "Severe floods have hit northern Bihar, resulting in over 10,000 people being displaced. Relief camps have been set up in schools to provide aid to those affected.",
+    "id": "c33d5af8-7b88-497e-b3c0-06548b25b4b9"
+  },
+  {
+    "event_type": "Flash floods",
+    "location": "Dubai",
+    "people_killed": "Unknown",
+    "people_trapped": "Unknown",
+    "infrastructure_damage": {
+      "traffic_disruption": true,
+      "flight_cancellations": "dozens"
+    },
+    "advice": "Stay indoors if possible",
+    "summary": "Flash floods in Dubai have caused significant disruption, affecting traffic and leading to the cancellation of dozens of flights. Residents are advised to stay indoors if possible.",
+    "id": "d8f1bda7-a6ca-4916-8e4c-5a6e1f492d89"
+  },
+  {
+    "event_type": "War",
+    "location": [
+      "India",
+      "Pakistan"
+    ],
+    "people_killed": 15,
+    "people_trapped": null,
+    "infrastructure_damage": null,
+    "other_details": {
+      "cause": "Trade issues"
+    },
+    "summary": "A war triggered by trade issues between India and Pakistan resulted in the death of 15 people.",
+    "id": "6450a0f9-d47c-4816-b2c0-bc7aaf55f0fc"
+  },
+  {
+    "event_type": "War",
+    "location": [
+      "India",
+      "Pakistan"
+    ],
+    "people_killed": "Unknown",
+    "people_trapped": "Unknown",
+    "infrastructure_damage": "Unknown",
+    "other_details": "The war between India and Pakistan has come to an end with a decision to ceasefire.",
+    "summary": "The war between India and Pakistan has ended with both countries deciding to implement a ceasefire.",
+    "id": "7bff9c0c-f1cd-4b56-912b-3a5be16cab61"
+  },
+  {
+    "event_type": "War",
+    "location": [
+      "India",
+      "Pakistan"
+    ],
+    "people_killed": "Unknown",
+    "people_trapped": "Unknown",
+    "infrastructure_damage": "Unknown",
+    "other_details": "Conflict initiated due to Pakistan hitting different cities in India",
+    "summary": "War has erupted between India and Pakistan, instigated by Pakistan's attacks on various Indian cities.",
+    "id": "a5ed4dcc-f114-49d4-aee7-4a38acf6ff4d"
+  }
+]
