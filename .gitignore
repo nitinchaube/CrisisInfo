@@ -10,3 +10,12 @@ key.txt
 .ipynb_checkpoints/
 chroma_db/
 event_store/
+/frontend/node_modules
+
+# Optionally ignore build or dist if you're building the frontend
+/frontend/build/
+/frontend/dist/
+
+# Ignore any frontend environment or secret files
+/frontend/.env
+/frontend/*.env
