@@ -19,3 +19,5 @@ event_store/
 # Ignore any frontend environment or secret files
 /frontend/.env
 /frontend/*.env
+
+/backend/.enb

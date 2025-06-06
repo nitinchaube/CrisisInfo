@@ -26,10 +26,11 @@ const FiltersPanel = ({ onEventSelect }) => {
   });
 
   useEffect(() => {
-    fetch('http://localhost:5000/events')
+    fetch('http://127.0.0.1:5000/api/allEvents')
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
+        console.log(data)
         setFilters(generateFilterOptions(data));
         setLoading(false);
       })
@@ -101,11 +102,7 @@ const FiltersPanel = ({ onEventSelect }) => {
         <CircularProgress />
       ) : (
         <>
-          {renderCheckboxGroup('Event Types', filters.eventTypes, 'eventTypes')}
-          {renderCheckboxGroup('Locations', filters.locations, 'locations')}
-          {renderCheckboxGroup('Categories', filters.categories, 'categories')}
-
-          <Typography variant="subtitle2" sx={{ mt: 2 }}>
+        <Typography variant="subtitle2" sx={{ mt: 2 }}>
             Filtered Events ({filteredEvents.length})
           </Typography>
           <List dense>
@@ -118,6 +115,13 @@ const FiltersPanel = ({ onEventSelect }) => {
               </ListItemButton>
             ))}
           </List>
+
+
+          {renderCheckboxGroup('Event Types', filters.eventTypes, 'eventTypes')}
+          {renderCheckboxGroup('Locations', filters.locations, 'locations')}
+          {renderCheckboxGroup('Categories', filters.categories, 'categories')}
+
+          
         </>
       )}
     </Paper>

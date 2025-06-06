@@ -1,0 +1,88 @@
+[
+  {
+    "event_type": "War",
+    "locations": "India, Pakistan",
+    "people_killed": "Unknown",
+    "people_trapped": "Unknown",
+    "infrastructure_damage": "Unknown",
+    "other_details": "Conflict initiated due to Pakistan hitting different cities in India",
+    "summary": "War has erupted between India and Pakistan, reportedly due to Pakistan attacking various cities in India. The number of casualties and the extent of infrastructure damage is currently unknown.",
+    "category": "Conflict",
+    "id": "f1588e4c-9a2d-42c0-b758-d090c7b92fd0"
+  },
+  {
+    "event_type": "War",
+    "locations": "US, Iran",
+    "people_killed": 73,
+    "people_trapped": null,
+    "infrastructure_damage": null,
+    "other_details": "War started due to oil",
+    "summary": "A war has begun between the US and Iran, reportedly due to oil-related issues. It has been reported that 73 people in Iran have been killed.",
+    "category": "injured_or_dead_people",
+    "id": "2977670f-a9b7-4bff-bb14-d68caeb46401"
+  },
+  {
+    "event_type": "War",
+    "locations": "Russia, Ukraine",
+    "people_killed": 45,
+    "people_trapped": "Unknown",
+    "infrastructure_damage": "Severe damage to public infrastructure including bridges and power stations",
+    "other_details": "Conflict escalated after a disputed territory was annexed",
+    "summary": "War has broken out between Russia and Ukraine following the annexation of a disputed region. Reports indicate significant casualties and severe infrastructure damage.",
+    "category": "Conflict",
+    "id": "d1a1c0b2-637c-4d2a-9485-53f239876c09"
+  },
+  {
+    "event_type": "War",
+    "locations": "China, Taiwan",
+    "people_killed": "Unknown",
+    "people_trapped": "Dozens reportedly trapped in border zones",
+    "infrastructure_damage": "Communication towers and military bases damaged",
+    "other_details": "Conflict began after a series of airspace violations",
+    "summary": "Tensions have escalated into armed conflict between China and Taiwan, reportedly following multiple airspace violations. Damage has been reported in key strategic areas.",
+    "category": "Conflict",
+    "id": "31c4276e-1b0e-48f7-bc93-1a727b37f8a1"
+  },
+  {
+    "event_type": "War",
+    "locations": "Israel, Gaza",
+    "people_killed": 129,
+    "people_trapped": "Hundreds displaced and trapped in shelters",
+    "infrastructure_damage": "Hospitals and schools hit by airstrikes",
+    "other_details": "Rocket fire and retaliatory airstrikes led to heavy civilian casualties",
+    "summary": "A war has erupted between Israel and Gaza. Rocket fire and retaliatory airstrikes have caused significant civilian casualties and infrastructural damage, particularly affecting hospitals and schools.",
+    "category": "injured_or_dead_people",
+    "id": "6e92f6b3-9ef7-4b8e-b91e-f63f7fd3341d"
+  },
+  {
+    "event_type": "War",
+    "locations": "Ukraine, Russia",
+    "people_killed": "Not specified",
+    "people_trapped": "Not specified",
+    "infrastructure_damage": "Loss of property",
+    "other_details": "The war between Ukraine and Russia has restarted",
+    "summary": "The war between Ukraine and Russia has restarted, leading to loss of property and lives.",
+    "category": "affected_individuals",
+    "id": "b257a955-4e39-4e5d-87a4-81fe32031ec3"
+  },
+  {
+    "event_type": "Heavy Rainfall",
+    "locations": "Mumbai, India",
+    "people_injured": 20,
+    "infrastructure_damage": "Power cut in some areas",
+    "summary": "Heavy rainfall in Mumbai, India has caused significant issues, injuring around 20 people and leading to power cuts in some areas.",
+    "category": "injured_or_dead_people",
+    "id": "54a8dd46-8157-4c74-86d7-156ee4e19b87"
+  },
+  {
+    "event_type": "Rainfall",
+    "locations": "Mumbai",
+    "people_killed": "Not mentioned",
+    "people_trapped": "Not mentioned",
+    "infrastructure_damage": "Not mentioned",
+    "other_details": "The rainfall in Mumbai has stopped",
+    "summary": "The rainfall in Mumbai has stopped. No further details provided.",
+    "category": "other_relevant_information",
+    "id": "74f465b2-83ff-438d-be74-fa372e3b9e40"
+  }
+]
