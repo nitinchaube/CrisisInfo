@@ -3,13 +3,31 @@ from uuid import uuid4
 import json
 from sentence_transformers import SentenceTransformer
 import os
+import threading
+
+# Global model instance to prevent multiple downloads
+_model_instance = None
+_model_lock = threading.Lock()
+
+def get_model():
+    """Get or create the global model instance"""
+    global _model_instance
+    if _model_instance is None:
+        with _model_lock:
+            if _model_instance is None:
+                print("Loading sentence transformer model...")
+                _model_instance = SentenceTransformer('all-MiniLM-L6-v2')
+                print("Model loaded successfully")
+    return _model_instance
+
 class RAGBackend:
     def __init__(self, json_path="events.json", db_path="./chroma_db", collection_name="events"):
         self.json_path = json_path
         self.db_path = db_path
         self.collection_name = collection_name
 
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+        # Use lazy loading for model
+        self._model = None
         self.similarity_threshold = 0.6  # Adjust as needed
 
         # Loading document store
@@ -18,6 +36,13 @@ class RAGBackend:
         # Initializing Chroma DB
         client = chromadb.PersistentClient(path="./chroma_db")
         self.collection = client.get_or_create_collection("events")
+
+    @property
+    def model(self):
+        """Lazy load the model only when needed"""
+        if self._model is None:
+            self._model = get_model()
+        return self._model
 
     def load_or_create_json_store(self):
         if os.path.exists(self.json_path):
@@ -43,8 +68,6 @@ class RAGBackend:
         self.collection.add(documents=[summary], ids=[doc_id])
         return doc_id
 
-        
-    
     def update_document(self, doc_id, new_event: dict):
         found = False
         for i, doc in enumerate(self.documents):
@@ -81,9 +104,7 @@ class RAGBackend:
         if ids and distances:
             return {"id": ids[0], "distance": distances[0]}
         return None
-    
 
-        
     def process_event(self, event: dict):
         if isinstance(event, str):
             try:
