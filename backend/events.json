@@ -84,5 +84,16 @@
     "summary": "The rainfall in Mumbai has stopped. No further details provided.",
     "category": "other_relevant_information",
     "id": "74f465b2-83ff-438d-be74-fa372e3b9e40"
+  },
+  {
+    "event_type": "Tornado",
+    "locations": "Moore, Oklahoma",
+    "people_killed": 40,
+    "people_trapped": null,
+    "infrastructure_damage": "Homes destroyed, power lines down",
+    "other_details": "Residents are advised to stay safe and take shelter immediately",
+    "summary": "A massive tornado has touched down near Moore, Oklahoma, causing significant damage to homes and power lines. 40 people have been reported killed. Residents are being advised to stay safe and take shelter immediately.",
+    "category": "injured_or_dead_people",
+    "id": "8c74cb29-bd18-4907-8b28-35169970df2e"
   }
 ]

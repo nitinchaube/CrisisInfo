@@ -1,7 +1,7 @@
 // Frontend configuration
 const config = {
-  // API URL - will be set by environment variable in production
-  API_BASE_URL: process.env.REACT_APP_API_URL || 'http://localhost:5002',
+  API_BASE_URL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000',
+  // Add other configuration options here
   
   // App settings
   APP_NAME: 'Event Intelligence Dashboard',

@@ -1,23 +1,28 @@
 services:
-  # Backend Service
+  # Backend API Service
   - type: web
     name: event-intelligence-backend
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.16
-      - key: OPENAI_API_KEY
-        sync: false
       - key: FLASK_ENV
         value: production
-      - key: CORS_ORIGINS
-        value: https://event-intelligence-frontend.onrender.com
-    healthCheckPath: /api/allEvents
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CHROMA_DB_PATH
+        value: ./chroma_db
+      - key: HUGGINGFACE_HUB_CACHE
+        value: ./models
+      - key: TRANSFORMERS_CACHE
+        value: ./models
+      - key: HF_HOME
+        value: ./models
 
-  # Frontend Service
+  # Frontend React App
   - type: web
     name: event-intelligence-frontend
     env: static
@@ -25,9 +30,7 @@ services:
     buildCommand: npm install && npm run build
     staticPublishPath: ./build
     envVars:
-      - key: REACT_APP_API_URL
+      - key: REACT_APP_API_BASE_URL
         value: https://event-intelligence-backend.onrender.com
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html 
+      - key: CI
+        value: false 
